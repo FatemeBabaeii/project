@@ -1,0 +1,36 @@
+.productItem {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 3px solid transparent;
+    width: 500px;
+  &.active {
+    border: 3px solid #971f1f;
+    color: #971f1f;
+    font-weight: bolder;
+  }
+
+  > div {
+    flex-basis: 15%;
+    float: right;
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+    background-color: white;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+}
